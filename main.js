@@ -10,13 +10,15 @@ const KEYBOARD = [{ x: 500, y: 1500 }, { x: 250, y: 950 }, { x: 500, y: 950 },
 { x: 750, y: 950 }, { x: 250, y: 1150 }, { x: 500, y: 1150 },
 { x: 750, y: 1150 }, { x: 250, y: 1400 }, { x: 500, y: 1400 },
 { x: 750, y: 1400 }];
+// 屏幕解锁滑动用时
+const SWIPE_DELAY = 420;
 /**
  * @description 唤醒设备
  */
 function brightScreen() {
     device.wakeUpIfNeeded();
     sleep(1000)
-    gesture(420, [540, device.height * 0.9], [540, device.height * 0.1]);
+    gesture(SWIPE_DELAY, [540, device.height * 0.9], [540, device.height * 0.1]);
     var psd = unlock_pwd
     for (var i = 0; i < psd.length; i++) {
         sleep(500)
