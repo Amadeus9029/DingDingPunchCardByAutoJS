@@ -33,13 +33,13 @@
 
 6. 运行unlockTest.js脚本测试合适的划屏用时swipe_time,途中的最佳滑动时间为320（毫秒），不同手机数字不同。
 
-   ![image-20220329202404418](https://github.com/Amadeus9029/DingDingPunchCardByAutoJS/tree/main/img/swipe_delay.png)
+   <img src="https://github.com/Amadeus9029/DingDingPunchCardByAutoJS/tree/main/img/swipe_delay.png" alt="滑动延时"/>
 
 7. 修改main.js中的unlock_pwd（行号5）为自己的解锁密码，修改KEYBOARD（行号9）以及SWIPE_DELAY（行号为14），SWIPE_DELAY的值就是步骤6中获取的最佳滑动时间。
 
 8. 手机锁屏，运行main.js脚本，出现下述界面说明main.js脚本运行成功。（如果手机网络速度较慢可适当增加代码执行过程中的延迟，即修改指定位置的sleep()函数中的数值。）
 
-   <img src="https://github.com/Amadeus9029/DingDingPunchCardByAutoJS/tree/main/img/successful.jpg" alt="微信图片_20220329203736" style="zoom: 25%;" />
+   <img src="https://github.com/Amadeus9029/DingDingPunchCardByAutoJS/tree/main/img/successful.jpg" alt="提交成功" style="zoom: 25%;" />
 
 9. 在VSCode中右键main.js，选择保存到所有设备（Save）。刷新手机中的Auto.js界面，出现main.js脚本
 
